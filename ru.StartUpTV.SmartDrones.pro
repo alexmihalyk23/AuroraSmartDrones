@@ -44,10 +44,12 @@ PKGCONFIG += \
 
 SOURCES += \
     src/facedetector.cpp \
+    src/imagesaver.cpp \
     src/main.cpp \
 
 HEADERS += \
-    src/facedetector.h
+    src/facedetector.h \
+    src/imagesaver.h
 
 DISTFILES += \
     qml/pages/CameraPage.qml \
