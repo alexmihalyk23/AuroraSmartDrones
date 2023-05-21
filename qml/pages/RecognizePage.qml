@@ -10,32 +10,14 @@ Page {
     allowedOrientations: Orientation.All
 
 
-    Camera {
-            id: camera
-
-            imageProcessing.whiteBalanceMode: CameraImageProcessing.WhiteBalanceFlash
-
-            exposure {
-                exposureCompensation: -1.0
-                exposureMode: Camera.ExposurePortrait
-            }
-
-            flash.mode: Camera.FlashRedEyeReduction
-
-            imageCapture {
-                onImageCaptured: {
-                    photoPreview.source = preview  // Show the preview in an Image
-                }
-            }
-        }
-
-        VideoOutput {
-            source: camera
-            anchors.fill: parent
-            focus : visible // to receive focus and capture key events when visible
-        }
-
-        Image {
-            id: photoPreview
-        }
+    Button{
+        id: main
+        anchors {topMargin: 100; top: parent.top; left: parent.left; right: parent.right; margins: Theme.horizontalPageMargin }
+        text: "Распознать"
+    }
+    Image {
+        id: image
+        anchors {topMargin: 100; leftMargin: 100; rightMargin: 100; top: main.top; margins: Theme.horizontalPageMargin}
+        source: "../icons/SmartDrones.svg"
+    }
 }

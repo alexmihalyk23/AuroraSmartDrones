@@ -69,6 +69,3 @@ TRANSLATIONS += \
     translations/ru.StartUpTV.SmartDrones.ts \
     translations/ru.StartUpTV.SmartDrones-ru.ts \
 
-INCLUDEPATH += /usr/local/include/opencv4
-LIBS += -L/lib -I/usr/include/opencv -lopencv_core -lopencv_cudaimgproc -lopencv_cudaobjdetect -lopencv_imgcodecs -lopencv_imgproc -lopencv_objdetect -lopencv_video -lopencv_videoio -lopencv_videostab
-
