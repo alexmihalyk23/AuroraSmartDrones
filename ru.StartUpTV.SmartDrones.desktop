@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=ru.StartUpTV.SmartDrones
+Exec=/usr/bin/ru.StartUpTV.SmartDrones
+Name=SmartDrones
+Name[ru]=УмныйДрон
+
+[X-Application]
+Permissions=Sensors;SecureStorage;PushNotifications;DeviceInfo;Audio;Camera;Documents;Downloads;Internet;Microphone;Pictures;PublicDir;RemovableMedia;Videos;WebView
+OrganizationName=ru.StartUpTV
+ApplicationName=SmartDrones
+ExecDBus=/usr/bin/ru.StartUpTV.SmartDrones
